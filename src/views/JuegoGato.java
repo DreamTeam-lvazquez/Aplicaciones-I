@@ -54,6 +54,25 @@ public class JuegoGato extends javax.swing.JFrame {
      
   
     
+    public void Empate(){
+        if((btn1.getActionCommand()=="1" || btn1.getActionCommand()=="2") &&
+          ( btn2.getActionCommand()=="1" || btn2.getActionCommand()=="2") && 
+           ( btn3.getActionCommand()=="1" || btn3.getActionCommand()=="2") &&
+          ( btn4.getActionCommand()=="1" || btn4.getActionCommand()=="2") &&
+                ( btn5.getActionCommand()=="1" || btn5.getActionCommand()=="2") &&
+                ( btn6.getActionCommand()=="1" || btn6.getActionCommand()=="2") &&
+                ( btn7.getActionCommand()=="1" || btn7.getActionCommand()=="2") &&
+                ( btn8.getActionCommand()=="1" || btn8.getActionCommand()=="2") &&
+                ( btn9.getActionCommand()=="1" || btn9.getActionCommand()=="2")
+                      
+                ){
+        JOptionPane.showMessageDialog(null, "Fin del Juego!");
+        
+        
+        }
+            
+    }
+    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -381,6 +400,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 2;
             txtJugador1.setBackground(new java.awt.Color(255,255, 0));
              txtJugador2.setBackground(new java.awt.Color(255,0, 51));
+             Empate();
 
         } else {
             btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/o.png")));
@@ -388,7 +408,9 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 1;
             txtJugador1.setBackground(new java.awt.Color(255,0, 51));
              txtJugador2.setBackground(new java.awt.Color(255,255, 0));
+             Empate();
         }
+        
         if(btn1.getIcon().toString().equals(btn2.getIcon().toString())&&(btn1.getIcon().toString().equals(btn3.getIcon().toString()))){
        JOptionPane.showMessageDialog(null, "Felicidades, haz GANADO!!!") ;
         }else if(btn1.getIcon().toString().equals(btn4.getIcon().toString())&&(btn1.getIcon().toString().equals(btn7.getIcon().toString()))){
@@ -481,6 +503,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 2;
             txtJugador1.setBackground(new java.awt.Color(255,255, 0));
              txtJugador2.setBackground(new java.awt.Color(255,0, 51));
+             Empate();
 
         } else {
             btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/o.png")));
@@ -488,6 +511,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 1;
              txtJugador1.setBackground(new java.awt.Color(255,0, 51));
              txtJugador2.setBackground(new java.awt.Color(255,255, 0));
+             Empate();
         }
         if(btn1.getIcon().toString().equals(btn2.getIcon().toString())&&(btn1.getIcon().toString().equals(btn3.getIcon().toString()))){
        JOptionPane.showMessageDialog(null, "Felicidades, haz GANADO!!!") ;
@@ -525,6 +549,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 2;
              txtJugador1.setBackground(new java.awt.Color(255,255, 0));
              txtJugador2.setBackground(new java.awt.Color(255,0, 51));
+             Empate();
 
         } else {
             btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/o.png")));
@@ -532,6 +557,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 1;
              txtJugador1.setBackground(new java.awt.Color(255,0, 51));
              txtJugador2.setBackground(new java.awt.Color(255,255, 0));
+             Empate();
         }
          if(btn1.getIcon().toString().equals(btn2.getIcon().toString())&&(btn1.getIcon().toString().equals(btn3.getIcon().toString()))){
        JOptionPane.showMessageDialog(null, "Felicidades, haz GANADO!!!") ;
@@ -559,12 +585,14 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 2;
              txtJugador1.setBackground(new java.awt.Color(255,255, 0));
              txtJugador2.setBackground(new java.awt.Color(255,0, 51));
+             Empate();
         } else {
             btn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/o.png")));
             btn4.setActionCommand("2");
             turno = 1;
              txtJugador1.setBackground(new java.awt.Color(255,0, 51));
              txtJugador2.setBackground(new java.awt.Color(255,255, 0));
+             Empate();
         }
          if(btn4.getIcon().toString().equals(btn5.getIcon().toString())&&(btn4.getIcon().toString().equals(btn6.getIcon().toString()))){
     JOptionPane.showMessageDialog(null, "Felicidades, haz GANADO!!!") ;
@@ -591,6 +619,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 2;
              txtJugador1.setBackground(new java.awt.Color(255,255, 0));
              txtJugador2.setBackground(new java.awt.Color(255,0, 51));
+             Empate();
 
         } else {
             btn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/o.png")));
@@ -598,6 +627,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 1;
              txtJugador1.setBackground(new java.awt.Color(255,0, 51));
              txtJugador2.setBackground(new java.awt.Color(255,255, 0));
+             Empate();
         }
          if(btn4.getIcon().toString().equals(btn5.getIcon().toString())&&(btn4.getIcon().toString().equals(btn6.getIcon().toString()))){
     JOptionPane.showMessageDialog(null, "Felicidades, haz GANADO!!!") ;
@@ -626,6 +656,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 2;
              txtJugador1.setBackground(new java.awt.Color(255,255, 0));
              txtJugador2.setBackground(new java.awt.Color(255,0, 51));
+             Empate();
 
         } else {
             btn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/o.png")));
@@ -633,6 +664,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 1;
              txtJugador1.setBackground(new java.awt.Color(255,0, 51));
              txtJugador2.setBackground(new java.awt.Color(255,255, 0));
+             Empate();
                     
         }
          if(btn4.getIcon().toString().equals(btn5.getIcon().toString())&&(btn4.getIcon().toString().equals(btn6.getIcon().toString()))){
@@ -658,6 +690,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 2;
              txtJugador1.setBackground(new java.awt.Color(255,255, 0));
              txtJugador2.setBackground(new java.awt.Color(255,0, 51));
+             Empate();
 
         } else {
             btn7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/o.png")));
@@ -665,6 +698,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 1;
             txtJugador1.setBackground(new java.awt.Color(255,0, 51));
              txtJugador2.setBackground(new java.awt.Color(255,255, 0));
+             Empate();
         }
          if(btn7.getIcon().toString().equals(btn8.getIcon().toString())&&(btn7.getIcon().toString().equals(btn9.getIcon().toString()))){
     JOptionPane.showMessageDialog(null, "Felicidades, haz GANADO!!!") ;
@@ -692,6 +726,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 2;
              txtJugador1.setBackground(new java.awt.Color(255,255, 0));
              txtJugador2.setBackground(new java.awt.Color(255,0, 51));
+             Empate();
 
         } else {
             btn8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/o.png")));
@@ -699,6 +734,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 1;
              txtJugador1.setBackground(new java.awt.Color(255,0, 51));
              txtJugador2.setBackground(new java.awt.Color(255,255, 0));
+             Empate();
         }
          if(btn7.getIcon().toString().equals(btn8.getIcon().toString())&&(btn7.getIcon().toString().equals(btn9.getIcon().toString()))){
     JOptionPane.showMessageDialog(null, "Felicidades, haz GANADO!!!") ;
@@ -724,6 +760,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 2;
              txtJugador1.setBackground(new java.awt.Color(255,255, 0));
              txtJugador2.setBackground(new java.awt.Color(255,0, 51));
+             Empate();
 
         } else {
             btn9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/o.png")));
@@ -731,6 +768,7 @@ public class JuegoGato extends javax.swing.JFrame {
             turno = 1;
              txtJugador1.setBackground(new java.awt.Color(255,0, 51));
              txtJugador2.setBackground(new java.awt.Color(255,255, 0));
+             Empate();
         }
          if(btn7.getIcon().toString().equals(btn8.getIcon().toString())&&(btn7.getIcon().toString().equals(btn9.getIcon().toString()))){
     JOptionPane.showMessageDialog(null, "Felicidades, haz GANADO!!!") ;
